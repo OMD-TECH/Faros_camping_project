@@ -121,10 +121,11 @@ function Home() {
                   <p>Discover a spiritual journey like no other at the <span style={{color:"#6834d4"}}>FARO's December Camping Retreat</span>. This upcoming gathering promises an unforgettable experience for individuals and families sekking spiritual growth. </p>
                   <div className="expectation mt-2">
                     <h3><b>Come Expectant!</b></h3>
-                    <p>Healing, Worship, Deliverance, Breakthrough, Teachings and lots more will take place.</p>
-                    <span>Engage in biblical and spiritual teachings that deepens your faith and understanding with Apostle Micheal Favour and other powerful men of God</span>
+                    <p>Healing, Worship, Deliverance, Breakthrough, Teachings and lots more will take place. <span>
+                      Also engage in biblical and spiritual teachings that deepens your faith and understanding with Apostle Micheal Favour and other powerful men of God.</span></p>
+    
                   </div>
-                  <button className="register mt-4">
+                  <button className="register mt-2">
                     <span>REGISTER</span>
                   </button>
                 </div>
@@ -215,6 +216,11 @@ function Home() {
             <div className="right col-md">
               <h2><b>ABOUT US</b></h2>
             </div>
+          </div>
+        </div>
+        <div className="sec6">
+          <div className="img">
+            <img src="/images/image1 (2).jpg" alt="" />
           </div>
         </div>
         <div className="homefooter" style={{marginTop:"9rem"}}>
