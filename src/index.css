@@ -1,12 +1,6 @@
 .home {
   position: relative;
 }
-.home h2 {
-  text-align: center;
-}
-.home h3 {
-  text-align: center;
-}
 .home .homecont {
   position: absolute;
   top: 0;
@@ -41,7 +35,6 @@
 }
 .home .homecont .imagebanner .carousel .carousel-item .textbody .text {
   margin-top: auto;
-  display: grid;
   width: 700px;
 }
 .home .homecont .imagebanner .carousel .carousel-item .textbody .text h2 b {
@@ -128,6 +121,7 @@
 }
 .home .homecont .sec2 .sec2cont .right {
   height: 400px;
+  padding: 0.7rem;
   font-family: Roboto;
   background-color: rgba(107, 7, 87, 0.1);
 }
@@ -145,11 +139,14 @@
   border-radius: 10px;
   text-align: center;
   padding: 0.4rem 0rem;
+  margin-left: 15rem;
+  color: white;
   cursor: pointer;
 }
 .home .homecont .sec2 .sec2cont .right .register:hover {
   background-color: transparent;
   border: 1px solid orangered;
+  color: black;
 }
 .home .homecont .sec3 {
   margin-top: 9rem;
@@ -160,9 +157,14 @@
 }
 .home .homecont .sec3 .sec3cont .left {
   background-color: rgba(107, 7, 87, 0.1);
+  padding: 1rem;
 }
 .home .homecont .sec3 .sec3cont .left h2 {
-  color: orangered;
+  color: #362c5f;
+  text-align: center;
+}
+.home .homecont .sec3 .sec3cont .left h4 b {
+  color: rgb(107, 7, 87);
 }
 .home .homecont .sec3 .sec3cont .right {
   position: relative;
@@ -261,14 +263,109 @@
 }
 .home .homecont .sec5 .right {
   background-color: rgba(107, 7, 87, 0.1);
+  padding: 0.5rem 1rem;
+}
+.home .homecont .sec5 .right h2 {
+  text-align: center;
+  color: #362c5f;
+}
+.home .homecont .sec5 .right .vision {
+  color: #362c5f;
+}
+.home .homecont .sec5 .right .learnmore {
+  background-color: orangered;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  margin-left: 15rem;
+}
+.home .homecont .sec5 .right .learnmore:hover {
+  background-color: white;
+  border: 1px solid orangered;
+}
+.home .homecont .sec5 .right .learnmore:hover b {
+  color: black;
+}
+.home .homecont .sec5 .right .learnmore b {
+  color: white;
+}
+.home .homecont .sec6 {
+  position: relative;
+  margin-top: 9rem;
+  width: 100%;
+  background-color: #362c5f;
+}
+.home .homecont .sec6 .img {
+  position: static;
+  top: o;
+  width: 100%;
+  left: 0;
+  mix-blend-mode: overlay;
+}
+.home .homecont .sec6 .img img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.home .homecont .sec6 .sec6cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home .homecont .sec6 .sec6cont .textbody {
+  text-align: left !important;
+  color: white !important;
+  background-color: rgba(107, 7, 87, 0.5);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.home .homecont .sec6 .sec6cont .textbody .txtcont {
+  width: 600px;
+}
+.home .homecont .sec6 .sec6cont .textbody .txtcont h3 {
+  text-align: left;
+}
+.home .homecont .sec6 .sec6cont .textbody .txtcont .join-us {
+  color: orangered;
+  font-size: 1.1rem;
+}
+.home .homecont .sec6 .sec6cont .textbody .txtcont .sub-heading {
+  font-size: 1.6rem;
+}
+.home .homecont .sec6 .sec6cont .textbody .txtcont .joinusbtn {
+  background-color: orangered;
+  padding: 0.2rem 0.5rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  border-radius: 20px;
+}
+.home .homecont .sec6 .sec6cont .textbody .txtcont .joinusbtn:hover {
+  background-color: white;
+  border: 1px solid orangered;
+}
+.home .homecont .sec6 .sec6cont .textbody .txtcont .joinusbtn:hover b {
+  color: black;
+}
+.home .homecont .sec6 .sec6cont .textbody .txtcont .joinusbtn b {
+  color: white;
+  font-size: 1.3rem;
 }
 
 @media (max-width: 700px) {
   .home {
     font-size: 1rem !important;
   }
-  .home .imagebanner {
-    text-align: center;
+  .home .imagebanner h2 {
+    text-align: left !important;
   }
   .home .imagebanner .textbody {
     padding: 0.4rem !important;
@@ -292,11 +389,21 @@
   .home .sec2 .right {
     height: 100% !important;
   }
+  .home .sec2 .right .register {
+    margin-left: 5rem !important;
+  }
   .home .sec5 .left .leftcont {
     left: 17px !important;
   }
   .home .sec5 .right {
     margin-top: 7rem;
+  }
+  .home .sec5 .right .learnmore {
+    margin-left: 7rem !important;
+  }
+  .home .sec6 .sec6cont .txtcont {
+    width: 100% !important;
+    padding: 0.5rem;
   }
 }
 * {

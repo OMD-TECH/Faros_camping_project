@@ -38,7 +38,7 @@ function Header () {
                         </li>
                         <li className="partner">
                             <FaHandshake className="icon"/>
-                            <a href="#blog">Register</a>
+                            <a href="#register">Register</a>
                         </li>
                     </ul>
                     <button className="existmenu" onClick={toggleMenu}>

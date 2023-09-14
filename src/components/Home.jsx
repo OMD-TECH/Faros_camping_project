@@ -35,9 +35,9 @@ function Home() {
 
   useEffect(()=>{
     startTimer();
-    // return ()=>{
-    //   clearInterval(interval.current)
-    // }
+    return ()=>{
+      clearInterval(interval.current)
+    }
   })
   return (
     <div className="home">
@@ -81,7 +81,7 @@ function Home() {
           </div>
           </div>
         </div>
-        <div className="sec2 container-md ">
+        <div className="sec2 container-md " id="register">
           <div className="sec2cont row">
             <div className="left col-md">
               <div className="img">
@@ -117,10 +117,10 @@ function Home() {
             <div className="right col">
               <div className="sec2text">
                 <div className="text mt-5">
-                  <h3><b>FARO'S CAMPING MEETING</b></h3>
+                  <h3 className="text-center"><b>FARO'S CAMPING MEETING</b></h3>
                   <p>Discover a spiritual journey like no other at the <span style={{color:"#6834d4"}}>FARO's December Camping Retreat</span>. This upcoming gathering promises an unforgettable experience for individuals and families sekking spiritual growth. </p>
                   <div className="expectation mt-2">
-                    <h3><b>Come Expectant!</b></h3>
+                    <h3 className="text-center"><b>Come Expectant!</b></h3>
                     <p>Healing, Worship, Deliverance, Breakthrough, Teachings and lots more will take place. <span>
                       Also engage in biblical and spiritual teachings that deepens your faith and understanding with Apostle Micheal Favour and other powerful men of God.</span></p>
     
@@ -133,11 +133,17 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="sec3 container-md">
+        <div className="sec3 container-md" id="about">
           <div className="sec3cont row">
             <div className="left col">
-              <h2><b>Who We Are</b></h2>
-              <p>FARO's GLOBAL CHURCH (FARO meaning light house) is a ministry founded by Apst. Micheal Favour for the sole purpose of preaching the gospel and bringing end time revival to every creature.We are situated in the Eastern part of Nigeria, Owerri, Imo state to be precise but our operations are far beyond states, tribes, denomination etc.</p>
+              <h2><b>ABOUT THE CAMP MEETING</b></h2>
+              <div className="vision">
+                <h4><b>THE VISION</b></h4>
+                <p>vision vision vision vision vision vision vision vision vision vision vision vision vision vision visionvision vision vision vision vision vision vision vision vision vision vision </p>
+              </div>
+              <div className="location">
+                <h4><b>LOCATION</b></h4>
+              </div>
             </div>
             <div className="right col-md">
               <div className="img">
@@ -151,7 +157,48 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="sec4 container-md">
+        <div className="sec5 container-md about">
+          <div className="sec5cont row">
+            <div className="left col">
+              <div className="video">
+                <video src="/images/image1 (9).mp4" loop muted autoPlay></video>
+              </div>
+              <div className="leftcont row">
+                <div className="volunteer col">
+                  <h2 ><b>5k</b></h2>
+                  <p>VOLUNTEERS</p>
+                </div>
+                <div className="sponspor col">
+                  <h2><b>20+</b></h2>
+                  <p>SPONSORS</p>
+                </div>
+                <div className="outreaches col">
+                  <h2><b>50</b></h2>
+                  <p>OUTREACHES</p>
+                </div>
+                <div className="conferences col">
+                  <h2><b>10+</b></h2>
+                  <p>CONFERENCES</p>
+                </div>
+              </div>
+            </div>
+            <div className="right col-md">
+              <h2><b>ABOUT US</b></h2>
+              <div className="textbody">
+                <p>FARO's GLOBAL CHURCH (FARO meaning light house) is a ministry founded by Apst. Micheal Favour for the sole purpose of preaching the gospel and bringing end time revival to every creature.We are situated in Federal University Of Technology Owerri (FUTO), Imo state to be precise but our operations are far beyond states, tribes, denomination etc.</p>
+                <div className="vision">
+                  <h3 className="text-center"><b>Vision Statement</b></h3>
+                  <p>To raise men with understanding and mastery of the times into different spheres of influence, by the revelation of the word and the Spirit for Kingdom advancement.
+</p>
+                </div>
+                <button className="learnmore">
+                  <b>Learn More</b>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="sec4 container-md" id="partner">
           <p><b>P A R T I C I P A T E</b></p>
           <h3><b>Let's Make A Difference Today</b></h3>
           <div className="sec4cont row">
@@ -188,42 +235,24 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="sec5 container-md about" id="about">
-          <div className="sec5cont row">
-            <div className="left col">
-              <div className="video">
-                <video src="/images/image1 (9).mp4" loop muted autoPlay></video>
-              </div>
-              <div className="leftcont row">
-                <div className="volunteer col">
-                  <h2 ><b>5k</b></h2>
-                  <p>VOLUNTEERS</p>
-                </div>
-                <div className="sponspor col">
-                  <h2><b>20+</b></h2>
-                  <p>SPONSORS</p>
-                </div>
-                <div className="outreaches col">
-                  <h2><b>50</b></h2>
-                  <p>OUTREACHES</p>
-                </div>
-                <div className="conferences col">
-                  <h2><b>10+</b></h2>
-                  <p>CONFERENCES</p>
-                </div>
-              </div>
-            </div>
-            <div className="right col-md">
-              <h2><b>ABOUT US</b></h2>
-            </div>
-          </div>
-        </div>
-        <div className="sec6">
+        <div className="sec6 container-md">
           <div className="img">
             <img src="/images/image1 (2).jpg" alt="" />
           </div>
+          <div className="sec6cont">
+            <div className="textbody">
+              <div className="txtcont">
+                <p><b className="join-us">JOIN US TODAY</b></p>
+                <h3><b className="sub-heading">Join Us And Make A Difference</b></h3>
+                <p className="text">Be a part of a trusted and dedicated community driven by strong desire, conviction, accountability, ethical practices, and soul winning. Together, we can make a difference.</p>
+                <button className="joinusbtn">
+                  <b>Join Us Now </b>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="homefooter" style={{marginTop:"9rem"}}>
+        <div className="homefooter" style={{marginTop:"5rem"}}>
           <Footer />
         </div>
       </div>
