@@ -1,29 +1,28 @@
 @import "./components/scss/_home";
+@import "./components/scss/_about";
+@import "./components/scss/_partner";
+
 
 *{
     margin: 0;
-    font-family: play;
+    font-family: Poppins;
 }
 body{
     box-sizing: border-box !important;
     scroll-behavior: smooth !important;
-    background-color: rgba(107, 7, 87,.1);
-    &::-webkit-scrollbar{
-        width: 0 !important;
-    }
+    overflow-x: hidden;
+    background-color:white;
 }
-html{
-    overflow-x: hidden;;
-}
+
 //#137dc5
 .header{
     display: flex;
     align-items: baseline;
-   // background-color:  rgba(107, 7, 87,.7);
-    padding: .5rem 1rem;
+    background:linear-gradient(to bottom,rgb(39, 0, 93),rgba(39,0,93,.6));
     position: sticky;
     top: 0;
     z-index: 2;
+    padding: .5rem 1rem;
     .left{
         flex: 1;
         img{
@@ -47,19 +46,20 @@ html{
                     cursor: pointer;
                     display: flex;
                     align-items: center;
+                    text-align: center;
                     &:hover{
                         background-color: white;
-                        color: orangered !important;
+                        color: #fc6601 !important;
                         padding: 0rem .4rem;
                         border-radius: .3rem;
-                        box-sizing: border-box !important;
+                        //box-sizing: border-box !important;
                         a{
-                            color: orangered;
+                            color: #fc6601;
                         }
                     }
                     .icon{
                         //color: lighten($color: rgb(107, 7, 87), $amount: 30);
-                        color: orangered;
+                        color: #fc6601;
                         display: none;
                     }
                     a{
@@ -67,15 +67,14 @@ html{
                         color: white;
                     }
                 }
-                .partner{
-                    background-color: orangered !important;
-                    width: 100px;
-                    border-radius: 10px;
-                    text-align: center;
+                .part{
+                    background:linear-gradient(to right,#fc6601,rgb(39,0,93));
                     padding: .4rem;
+                    width: 100px;
                     font-weight: 600;
+                    border-radius: 10px;
                     &:hover{
-                        background-color: white !important;
+                        color: black !important;
                     }
                     .icon{
                         color: white;
@@ -94,57 +93,29 @@ html{
 }
 
 .footer{
-    background-color: rgba(107, 7, 87,.7);
-    color: lighten($color:#011d74, $amount: 50);
-    display: grid;
-    justify-content: center;
+    border-top: 1px solid gray;
+    background:linear-gradient(to bottom,whitesmoke,rgb(39,0,93));
     .footercont{
+        padding: 1rem;
+        .contact-us-cont{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         width: 100%;
-        padding: 2rem;
-        .subscribe{
-            width: 100%;
-            display: grid;
-            text-align: center;
-            .row{
-                display: flex;
-                flex-wrap: wrap;
-                grid-gap: .5rem;
-                margin: auto;
-                justify-content: center;
-                .input{
-                    width: 25rem !important;
-                    border-radius: 5px;
-                }
-                button{
-                    width: 100px;
-                    margin: auto;
-                    border-radius: 5px;
-                    background-color: transparent;
-                    color: white;
-                    &:hover{
-                        background-color: white;
-                        color: #011d74;
-                        border: 1px solid goldenrod;
-                    }
-                }
-            }
+       }
+       .social-cont{
+        display: inline-flex;
+        justify-content: space-around;
+        grid-gap: .5rem;
+        flex-wrap: wrap;
+        a{
+            text-decoration: none;
+            color: black;
         }
-        .socialmedia{
-            display: grid;
-            justify-content: center;
-            .socialcont{
-                ul{
-                    list-style: none;
-                    display: flex;
-                    //justify-content: center;
-                    //text-align: center;
-                    margin-right: auto;
-                    li{
-                        margin-left: .5rem;
-                    }
-                }
-            }
-        }
+       }
+    }
+    .right-reserve{
+     text-align: center;
     }
 }
 
@@ -153,14 +124,12 @@ html{
     *{
         font-size: 1rem;
     }
-
-
     .header{
         .overlayheader{
             position: absolute;
             top: 0;
             left: 0;
-            background-color: rgba(107, 7, 87,.3);//rgba(248, 75, 11,.7);
+            background-color: rgba(46, 4, 104, 0.3);
             width: 100%;
             height: 100vh;
             padding: 0;
@@ -168,7 +137,8 @@ html{
             transform: translateX(100%);
             transition: all 1s ease 0s;
             .right{
-                background-color: rgb(107, 7, 87);
+                background:linear-gradient(-400deg,whitesmoke,rgb(39,0,93));
+                //background-color: rgb(39, 0, 93);
                 width: 70%;
                 margin-left: auto;
                 height: 100vh;
@@ -182,7 +152,7 @@ html{
                     align-items: center;
                     margin-top: auto;
                     height: 100vh;
-                    color: orangeredred !important;
+                    color: #fc6601 !important;
                     li{
                         .icon{
                             display: flex;
@@ -193,9 +163,10 @@ html{
                     position: absolute;
                     top: 0;
                     display: flex;
-                    background-color:inherit ;
+                    background: url("./image1\ \(1\).jpg") ;
+                    background-position: center;
                     width: 100%;
-                    height: 50px;
+                    height: 100px;
                     color: white;
                     font-size: 25px;
                     border: none;
@@ -209,15 +180,16 @@ html{
             display:block !important;
             background-color: transparent;
             border: none;
-            color: lighten($color: rgb(107, 7, 87), $amount: 60);
+            color: white;//lighten($color: rgb(107, 7, 87), $amount: 60);
             width: 50px;
             &:hover{
                 border: 1px solid white;
                 border-radius: 10px;
-                background-color: darken($color: rgb(107, 7, 87), $amount: 5);
+                background-color: white;
+                border: none;
                 //padding: 0 .6rem !important;
                 box-sizing: border-box !important;
-                color: white;
+                color: #011d74;
             }
         }
     }

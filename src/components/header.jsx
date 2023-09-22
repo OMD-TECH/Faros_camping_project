@@ -36,7 +36,7 @@ function Header () {
                             <FaRegistered className="icon"/>
                             <a href="#partner"><span>GIVE</span> | <span>PARTNER</span></a>
                         </li>
-                        <li className="partner">
+                        <li className="part">
                             <FaHandshake className="icon"/>
                             <a href="#register">Register</a>
                         </li>
