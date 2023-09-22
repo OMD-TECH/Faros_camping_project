@@ -53,7 +53,7 @@ function Home() {
   return (
     <div className="home">
       <div className="homecont">
-        <div className="imagebanner container-fluid mt-3">
+      <div className="imagebanner mt-1">
           <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active item1">
@@ -90,8 +90,9 @@ function Home() {
             </div>
           </div>
           </div>
-        </div>
-        <div className='sec2 container-md' id="register">
+      </div>
+      <div className="p-2">
+      <div className='sec2 container-md' id="register">
           <div className="sec2cont row">
             <div className="left col-md rightloader" data-aos="fade-right">
               <div className="img">
@@ -233,6 +234,7 @@ function Home() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

@@ -16,11 +16,9 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px;
 }
 .home .homecont .imagebanner .carousel .carousel-item .textbody {
   position: absolute;
-  border-radius: 20px;
   top: 0;
   width: 100%;
   height: 100%;
@@ -403,9 +401,6 @@
 }
 
 @media (max-width: 700px) {
-  .home {
-    padding: 0.6rem;
-  }
   .home .imagebanner {
     padding: initial;
   }
@@ -486,7 +481,6 @@
 }
 @media (max-width: 600px) {
   .home {
-    padding: 0.6rem;
     font-size: 1rem !important;
   }
   .home br {

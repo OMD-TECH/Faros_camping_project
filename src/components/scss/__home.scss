@@ -13,12 +13,10 @@
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
-                            border-radius: 20px;
                         }
                     }
                     .textbody{
                         position: absolute;
-                        border-radius: 20px;
                         top:0;
                         width: 100%;
                         height: 100%;
@@ -420,7 +418,7 @@
 
 @media (max-width:700px){
     .home{
-        padding: .6rem;
+        //padding: .6rem;
         .imagebanner{
             //text-align: center;
             padding: initial ;
@@ -518,7 +516,6 @@
 
 @media (max-width:600px){
     .home{
-        padding: .6rem ;
         font-size: 1rem !important;
         br{
             display: grid !important;
