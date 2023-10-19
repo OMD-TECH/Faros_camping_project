@@ -1,5 +1,5 @@
 .sec4{
-    margin-top: 12rem;
+    margin-top: 7rem;
     text-align: center;
     h3{
         color: lighten($color: rgb(39,0,93), $amount: 40);;
@@ -21,11 +21,9 @@
             background-color:white;
             height: 300px;
             .subsecont{
-               // border: 1px solid rgba(255, 69, 0, .7);
                 padding: .5rem;
                 height: 100%;
-                outline-color: red;
-                //color: rgba(0, 0, 0, 0.815);
+                color:rgb(59, 50, 50);
                 background:linear-gradient(to bottom,white,rgb(39,0,93));
                 border-radius: 20px;
                 :nth-child(4){

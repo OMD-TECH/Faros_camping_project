@@ -1,5 +1,6 @@
 import { useState } from "react"
-import { FaArrowLeft, FaBars, FaHandshake, FaHome, FaPhone, FaRegistered, FaUser } from "react-icons/fa"
+import {Link} from  "react-router-dom"
+import { FaArrowLeft, FaBars, FaHandshake, FaHome, FaLock, FaPhone, FaRegistered, FaUser } from "react-icons/fa"
 
 function Header () {
     
@@ -26,7 +27,7 @@ function Header () {
                         </li>
                         <li >
                             <FaUser className="icon"/>
-                            <a href="#about">ABOUT</a>
+                            <a href="/about">ABOUT</a>
                         </li>
                         <li>
                            <FaPhone className="icon"/>
@@ -38,11 +39,13 @@ function Header () {
                         </li>
                         <li className="part">
                             <FaHandshake className="icon"/>
-                            <a href="#register">Register</a>
+                            <Link to="/login"><a>Login</a></Link>
                         </li>
                     </ul>
                     <button className="existmenu" onClick={toggleMenu}>
-                        <FaArrowLeft style={{margin:"auto .4rem"}}/>
+                        <div className="overlay">
+                            <FaArrowLeft style={{margin:"auto .4rem", fontSize:"1.5rem"}}/>
+                        </div>
                     </button>
                 </div>
             </div>

@@ -1,0 +1,77 @@
+.donate{
+    .sec1{
+        margin: auto;
+        .sec1cont{
+            position: relative;
+            color: white;
+            .imgbanner{
+                width: 100%;
+                height: 300px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                }
+            }
+            .overlay{
+                position: absolute;
+                top: 0;
+                background-color: rgb(39, 0, 93,.7);
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+        }
+    }
+    .sec2{
+        margin-top: 6rem;
+        background:linear-gradient(to left,#fc6601,rgb(39,0,93));
+        border-radius: 20px;
+        padding: 3rem;
+        color: white;
+        font-size: 1.3rem;
+        h2{
+            color: whitesmoke;
+        }
+        .account{
+            border: 2px solid white;
+            padding: 1rem;
+            border-radius: 20px;
+            width: 60%;
+            margin: auto;
+            .acc{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media (max-width:700px){
+    .donate{
+        .sec1{
+            .imgbanner{
+                //height: 400px !important;
+                img{
+                    height: 100% !important;
+                }
+            }
+        }
+        .sec2{
+            .account{
+                width: 400px ;
+            }
+        }
+    }
+}
+
+
+@media (max-width:600px) {
+    .donate{
+        .sec2{
+            .account{
+                width: 100%;
+            }
+        }
+    }
+}

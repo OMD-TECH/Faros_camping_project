@@ -9,7 +9,7 @@ import "aos/dist/aos.css"
 export default function Partner() {
 
   useEffect(()=>{
-    AOS.init({duration:1000, delay:0})
+    AOS.init({duration:1500, delay:0})
   },[])
 
 
@@ -39,7 +39,7 @@ export default function Partner() {
             <p>Be part of the revival movement. Volunteer your time and skills to create positive change together.
             </p>
             <a href="#">
-              <button>Join Us Now</button>
+              <button>Volunteer</button>
             </a>
           </div>
         </div>

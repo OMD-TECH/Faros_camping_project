@@ -5,13 +5,15 @@ import Footer from "./components/footer";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom"
 import About from "./components/About";
 import Donate from "./components/Donate";
+import Register from "./components/Register";
+import Login from "./components/Login";
 
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
+        <Header />
         <div className="contents">
           <Switch>
             <Route exact path="/">
@@ -23,10 +25,16 @@ function App() {
             <Route exact path="/donate">
               <Donate />
             </Route>
+            <Route exact path="/login">
+              <Login/>
+            </Route>
+            <Route exact path="/register">
+              <Register />
+            </Route>
           </Switch>
         </div>
+        <Footer/>
       </Router>
-      <Footer/>
     </div>
   );
 }
