@@ -1,46 +1,53 @@
 import { useState } from "react"
 import {Link} from  "react-router-dom"
-import { FaArrowLeft, FaBars, FaHandshake, FaHome, FaLock, FaPhone, FaRegistered, FaUser } from "react-icons/fa"
+import { FaArrowLeft, FaBars, FaHandshake, FaHome, FaPhone, FaRegistered, FaUser } from "react-icons/fa"
 
 function Header () {
     
-    const [display,setdisplay] = useState()
+    const [display,setdisplay] = useState(false)
     function toggleMenu() {
-        if (display===undefined) {
-            setdisplay("show")
-        }else{
-            setdisplay()
-        }
+        setdisplay(prev => !prev)
     }
 
     return(
+        <>
         <div className="header container-fluid">
             <div className="left">
                 <img src="/images/faroslogo.png" alt="" />
             </div>
-            <div className={`overlayheader ${display}`}>
+            <div className={`overlayheader ${display && 'show'}`}>
                 <div className="right">
                     <ul className="menu">
-                        <li>
-                            <FaHome className="icon"/>
-                            <a href="/">HOME</a>
-                        </li>
-                        <li >
-                            <FaUser className="icon"/>
-                            <a href="/about">ABOUT</a>
-                        </li>
-                        <li>
-                           <FaPhone className="icon"/>
-                            <a href="#contact">CONTACT-US</a>
-                        </li>
-                        <li>
-                            <FaRegistered className="icon"/>
-                            <a href="#partner"><span>GIVE</span> | <span>PARTNER</span></a>
-                        </li>
-                        <li className="part">
-                            <FaHandshake className="icon"/>
-                            <Link to="/login"><a>Login</a></Link>
-                        </li>
+                        <a href="/">
+                            <li>
+                                <FaHome className="icon"/>
+                                <span>HOME</span>
+                            </li>
+                        </a>
+                        <a href="/about">
+                            <li >
+                                <FaUser className="icon"/>
+                                <span>ABOUT</span>
+                            </li>
+                        </a>
+                        <a href="#contact">
+                            <li>
+                               <FaPhone className="icon"/>
+                                <span>CONTACT-US</span>
+                            </li>
+                        </a>
+                        <a href="#partner">
+                            <li>
+                                <FaRegistered className="icon"/>
+                                <span><span>GIVE</span> | <span>PARTNER</span></span>
+                            </li>
+                        </a>
+                        <a href="/login" className="part">
+                            <li className="part">
+                                <FaHandshake className="icon"/>
+                                <span>Login</span>
+                            </li>
+                        </a>
                     </ul>
                     <button className="existmenu" onClick={toggleMenu}>
                         <div className="overlay">
@@ -53,6 +60,7 @@ function Header () {
                 <FaBars />
             </button>
         </div>
+        </>
     )
 }
 

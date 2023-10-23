@@ -17,7 +17,7 @@ export default function Register() {
           <div className="leftcont">
             <div className="about-header row justify-content-center align-items-center">
               <div className="image col">
-                <img src="/images/image1 (11).png" alt="" />
+                <img src="/images/image1 (9).png" alt="" />
               </div>
               <div className="bannerlogo col-md">
                 <div className='textcont' >
@@ -40,6 +40,7 @@ export default function Register() {
                       <li>Mentality and Identity crisis prevention and repair.</li>
                     </ul>
                   </div>
+                  <p className='h4'><b>Apostle's Ministry Line:</b> +234 704 705 6510</p>
               </div>
             </div>
           </div>
@@ -71,12 +72,12 @@ export default function Register() {
             <div className="sec department">
               <h2>DEPARTMENTS</h2>
               <div className="department-sect">
-                <div className="container-md swiffy-slider slider-item-show3 slider-nav-round slider-nav-page events">
+                <div className="container-md swiffy-slider slider-item-show3 slider-nav-round slider-nav-page events slider-nav-sm slider-nav-page slider-item-snapstart slider-nav-round slider-nav-dark slider-indicators-sm slider-indicators-outside slider-indicators-round slider-indicators-dark">
                   <ul className="slider-container">
                       <li>
                           <div className="card border-0">
                               <div className="ratio ratio-1x1">
-                                  <img src="/images/image1 (1).jpg" className="card-img-top" loading="lazy" alt="..."/>
+                                  <img src="/images/image2 (1).jpg" className="card-img-top" loading="lazy" alt="..."/>
                               </div>
                               <div className="card-body p-0 p-2">
                                   <div className="d-flex">
@@ -88,7 +89,7 @@ export default function Register() {
                       <li>
                           <div className="card border-0">
                               <div className="ratio ratio-1x1">
-                                  <img src="/images/image1 (2).jpg" className="card-img-top" loading="lazy" alt="..."/>
+                                  <img src="/images/image2 (3).jpg" className="card-img-top" loading="lazy" alt="..."/>
                               </div>
                               <div className="card-body p-0 p-2">
                                   <div className="d-flex">
@@ -100,7 +101,7 @@ export default function Register() {
                       <li>
                           <div className="card border-0">
                               <div className="ratio ratio-1x1">
-                                  <img src="/images/image1 (3).jpg" className="card-img-top" loading="lazy" alt="..."/>
+                                  <img src="/images/image2 (6).jpg" className="card-img-top" loading="lazy" alt="..."/>
                               </div>
                               <div className="card-body p-0 p-2">
                                   <div className="d-flex">
@@ -158,8 +159,18 @@ export default function Register() {
                           </div>
                       </li>
                   </ul>
+
                   <button type="button" className="slider-nav" aria-labelledby="Go left" ></button>
                   <button type="button" className="slider-nav slider-nav-next" aria-labelledby="Go left" ></button>
+
+                  <div className="slider-indicators d-md-none">
+                    <button className="active" aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide"></button>
+                    <button aria-label="Go to slide" className=""></button>
+                    <button aria-label="Go to slide" className=""></button>
+                    <button aria-label="Go to slide" className=""></button>
+                    <button aria-label="Go to slide" className=""></button>
+                  </div>
                 </div>
               </div>
             </div>

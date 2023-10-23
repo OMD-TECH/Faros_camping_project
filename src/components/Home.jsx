@@ -7,7 +7,6 @@ import "swiffy-slider/css"
 import "aos/dist/aos.css"
 import Join from "./Join"
 import Sermons from "./Sermons";
-import { FaHeart } from "react-icons/fa";
 
 
 window.swiffyslider = swiffyslider;
@@ -67,7 +66,7 @@ function Home() {
           <div className="carousel-inner">
             <div className="carousel-item active item1">
               <div className="img">
-                <img src="/images/image1 (1).jpg" alt="" />
+                <img src="/images/image2 (7).jpg" alt="" />
               </div>
               <div className="textbody">
                 <div className="text">
@@ -83,7 +82,7 @@ function Home() {
             </div>
             <div className="carousel-item item2">
               <div className="img">
-                <img src="/images/image1 (4).jpg" alt="" />
+                <img src="/images/image1 (1).jpg" alt="" />
               </div>
               <div className="textbody">
                 <div className="text">
@@ -154,7 +153,7 @@ function Home() {
           <div className="sec2cont row ">
             <div className="left col-md rightloader" data-aos="fade-right">
               <div className="img">
-                <img src="/images/image1 (10).png" alt="" />
+                <img src="/images/image1 (11).png" alt="" />
               </div>
             </div>
             <div className="right col leftloader" data-aos="fade-left">
@@ -282,14 +281,14 @@ function Home() {
           <button type="button" className="slider-nav" aria-label="Go left" style={{backgroundColor:"white",height:"fit-content",margin:"auto"}}></button>
           <button type="button" className="slider-nav slider-nav-next" aria-label="Go left" style={{backgroundColor:"white",height:"fit-content",margin:"auto"}}></button>
 
-          {/* <div className="slider-indicators d-md-none">
+          <div className="slider-indicators d-md-none">
             <button className="active" aria-label="Go to slide"></button>
             <button aria-label="Go to slide"></button>
             <button aria-label="Go to slide" className=""></button>
             <button aria-label="Go to slide" className=""></button>
             <button aria-label="Go to slide" className=""></button>
             <button aria-label="Go to slide" className=""></button>
-          </div> */}
+          </div>
         </div>
         
         <Partner />
@@ -298,13 +297,13 @@ function Home() {
       </div>
     </div>
 
-      <div className="container-md swiffy-slider slider-item-show3 slider-nav-round slider-nav-page events">
+      <div className="container-md swiffy-slider slider-item-show3 slider-nav-round slider-nav-page events slider-nav-sm slider-nav-page slider-item-snapstart slider-nav-round slider-nav-dark slider-indicators-sm slider-indicators-outside slider-indicators-round slider-indicators-dark ">
         <h5>All Upcoming Events:</h5>
         <ul className="slider-container">
             <li>
                 <div className="card border-0">
                     <div className="ratio ratio-1x1">
-                        <img src="/images/image1 (10).png" className="card-img-top" loading="lazy" alt="..."/>
+                        <img src="/images/image1 (11).png" className="card-img-top" loading="lazy" alt="..."/>
                     </div>
                     <div className="card-body p-0 p-2">
                       <a href="/events/id">
@@ -319,7 +318,7 @@ function Home() {
             <li>
                 <div className="card border-0">
                     <div className="ratio ratio-1x1">
-                        <img src="/images/image1 (10).png" className="card-img-top" loading="lazy" alt="..."/>
+                        <img src="/images/image1 (11).png" className="card-img-top" loading="lazy" alt="..."/>
                     </div>
                     <div className="card-body p-0 p-2">
                       <a href="/events/id">
@@ -334,7 +333,7 @@ function Home() {
             <li>
                 <div className="card border-0">
                     <div className="ratio ratio-1x1">
-                        <img src="/images/image1 (10).png" className="card-img-top" loading="lazy" alt="..."/>
+                        <img src="/images/image1 (11).png" className="card-img-top" loading="lazy" alt="..."/>
                     </div>
                     <div className="card-body p-0 p-2">
                       <a href="/events/id">
@@ -349,7 +348,7 @@ function Home() {
             <li>
                 <div className="card border-0">
                     <div className="ratio ratio-1x1">
-                        <img src="/images/image1 (10).png" className="card-img-top" loading="lazy" alt="..."/>
+                        <img src="/images/image1 (11).png" className="card-img-top" loading="lazy" alt="..."/>
                     </div>
                     <div className="card-body p-0 p-2">
                       <a href="/events/id">
@@ -364,6 +363,15 @@ function Home() {
         </ul>
         <button type="button" className="slider-nav" aria-labelledby="Go left" ></button>
         <button type="button" className="slider-nav slider-nav-next" aria-labelledby="Go left" ></button>
+
+        <div className="slider-indicators d-md-none">
+            <button className="active" aria-label="Go to slide"></button>
+            <button aria-label="Go to slide"></button>
+            <button aria-label="Go to slide" className=""></button>
+            <button aria-label="Go to slide" className=""></button>
+            <button aria-label="Go to slide" className=""></button>
+            <button aria-label="Go to slide" className=""></button>
+          </div>
       </div>
   </div>
   )

@@ -1,4 +1,4 @@
-.home .homecont {
+.home {
   position: relative;
 }
 .home .homecont .imagebanner .carousel {
@@ -10,8 +10,6 @@
 .home .homecont .imagebanner .carousel .carousel-item .img {
   height: 100%;
   width: 100%;
-  -webkit-mask-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
-          mask-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0));
 }
 .home .homecont .imagebanner .carousel .carousel-item .img img {
   width: 100%;
@@ -278,11 +276,11 @@
 .home .events .slider-container li .card .card-body {
   position: absolute;
   bottom: 0;
-  background-color: rgb(39, 0, 93);
+  background-color: rgba(255, 255, 255, 0.8);
   width: 100%;
 }
 .home .events .slider-container li .card .card-body a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -357,6 +355,9 @@
   .home .sec3 .sec3cont .left .location {
     width: 100% !important;
   }
+  .home .sec3 .sec3cont .left a {
+    text-decoration: none;
+  }
   .home .sec2 .right {
     height: 100% !important;
   }
@@ -422,6 +423,9 @@
   }
   .home .sec3 .sec3cont .right .img {
     height: 60% !important;
+  }
+  .home .sec3 .sec3cont .left .learnmore {
+    margin-left: 26% !important;
   }
   .home .sec4 {
     margin-top: 7rem !important;
@@ -500,6 +504,9 @@
 .about .department {
   overflow: hidden !important;
 }
+.about .department .department-sect .slider-container li {
+  border-radius: 20px;
+}
 .about .department .department-sect .slider-container li .card {
   position: relative;
   border-radius: 20px;
@@ -510,10 +517,10 @@
 .about .department .department-sect .slider-container li .card .card-body {
   position: absolute;
   bottom: 0;
-  background-color: rgb(39, 0, 93);
+  background-color: rgba(225, 225, 225, 0.8);
   width: -moz-fit-content;
   width: fit-content;
-  color: white;
+  color: black;
   border-radius: 10px;
 }
 
@@ -629,10 +636,13 @@
     height: 100% !important;
   }
   .donate .sec2 .account {
-    width: 400px;
+    width: 70%;
   }
 }
 @media (max-width: 600px) {
+  .donate .sec2 {
+    padding: 1rem;
+  }
   .donate .sec2 .account {
     width: 100%;
   }
@@ -725,6 +735,9 @@
   display: flex;
   flex-wrap: wrap;
   grid-gap: 0.6rem;
+}
+.sermon-sec1 .carousel a {
+  text-decoration: none;
 }
 .sermon-sec1 .carousel .left {
   width: 45%;
@@ -845,16 +858,29 @@
 body {
   box-sizing: border-box !important;
   scroll-behavior: smooth !important;
-  overflow-x: hidden !important;
   background-color: whitesmoke;
+}
+body::-webkit-scrollbar {
+  display: none !important;
+  width: 0px !important;
+}
+
+.App {
+  overflow: hidden !important;
+  position: relative;
+}
+.App::-webkit-scrollbar {
+  visibility: hidden !important;
+  display: none !important;
+  width: 0px !important;
 }
 
 .header {
+  position: sticky !important;
+  top: 0;
   display: flex;
   align-items: baseline;
   background: rgb(39, 0, 93);
-  position: sticky;
-  top: 0;
   z-index: 2;
   padding: 0.5rem 1rem;
 }
@@ -880,6 +906,9 @@ body {
   list-style: none;
   color: #7697fe;
 }
+.header .overlayheader .right ul a {
+  text-decoration: none;
+}
 .header .overlayheader .right ul li {
   transition: all 200ms ease-in;
   cursor: pointer;
@@ -893,35 +922,57 @@ body {
   padding: 0rem 0.4rem;
   border-radius: 0.3rem;
 }
-.header .overlayheader .right ul li:hover a {
+.header .overlayheader .right ul li:hover span {
   color: #fc6601;
 }
 .header .overlayheader .right ul li .icon {
   color: #fc6601;
   display: none;
 }
-.header .overlayheader .right ul li a {
-  text-decoration: none;
+.header .overlayheader .right ul li span {
   color: white;
 }
 .header .overlayheader .right ul .part {
   background: linear-gradient(to right, #fc6601, rgb(39, 0, 93));
-  padding: 0.4rem;
+  padding: 0rem 0.4rem;
   width: 100px;
   font-weight: 600;
   border-radius: 10px;
 }
-.header .overlayheader .right ul .part:hover {
+.header .overlayheader .right ul .part:hover span {
   color: black !important;
-}
-.header .overlayheader .right ul .part .icon {
-  color: white;
 }
 .header .overlayheader .right .existmenu {
   display: none;
 }
 .header .hamburger {
   display: none;
+}
+
+.scroll-up {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 2;
+}
+.scroll-up a {
+  text-decoration: none;
+}
+.scroll-up a:hover {
+  background-color: rgb(0, 0, 0);
+}
+.scroll-up a:hover .i {
+  color: white;
+}
+.scroll-up a .i {
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  bottom: none;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .footer {
@@ -973,16 +1024,13 @@ body {
   * {
     font-size: 1rem;
   }
-  body {
-    overflow-x: hidden !important;
-  }
   .header .overlayheader {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(46, 4, 104, 0.3);
+    background-color: rgba(46, 4, 104, 0.5);
     width: 100%;
-    height: 100vh;
+    height: 100vh !important;
     padding: 0;
     margin: 0;
     transform: translateX(100%);
@@ -994,16 +1042,15 @@ body {
     margin-left: auto;
     height: 100vh;
     position: relative;
-    display: grid;
     justify-content: space-around;
     align-items: center;
   }
   .header .overlayheader .right ul {
-    display: grid !important;
+    display: grid;
     justify-content: space-around;
     align-items: center;
     margin-top: auto;
-    height: 100vh;
+    height: 100%;
     color: #fc6601 !important;
   }
   .header .overlayheader .right ul li:hover {
@@ -1011,13 +1058,16 @@ body {
     padding: 0.4rem 0.7rem;
     border-radius: 10px;
   }
-  .header .overlayheader .right ul li:hover a {
+  .header .overlayheader .right ul li:hover span {
     color: white !important;
   }
   .header .overlayheader .right ul li .icon {
     display: flex;
   }
-  .header .overlayheader .right ul a {
+  .header .overlayheader .right ul .part span {
+    color: white !important;
+  }
+  .header .overlayheader .right ul span {
     color: rgb(39, 0, 93) !important;
   }
   .header .overlayheader .right .existmenu {
@@ -1045,18 +1095,19 @@ body {
   .header .overlayheader.show {
     transform: translateX(0%);
   }
-  .header .hamburger {
+  .hamburger {
     display: block !important;
     background-color: transparent;
     border: none;
     color: white;
     width: 50px;
   }
-  .header .hamburger:hover {
+  .hamburger:hover {
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
     border: none;
+    padding: 0 0.6rem !important;
     box-sizing: border-box !important;
     color: #011d74;
   }

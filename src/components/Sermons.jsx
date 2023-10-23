@@ -22,7 +22,7 @@ export default function Sermons() {
               <div class="swiffy-slider slider-item-show2 slider-item-reveal slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation slider-nav-animation-fadein slider-item-first-visible rightcont">
                 <ul className="slider-container">
                   <li className="slide-visible">
-                    <a href="/sermons">
+                    <a href="https://t.me/farosglobalchurch">
                       <div className="card shadow ">
                         <div className="card-body p-2 p-xl-3">
                           <div className="icon" >
@@ -67,7 +67,7 @@ export default function Sermons() {
                     </a>
                   </li>
                   <li className="slide-visible">
-                    <a href="/videos">
+                    <a href="https://youtube.com/@farosglobalchurch?si=NeYxrcY-1D6dJukw">
                       <div className="card shadow ">
                           <div className="card-body p-2 p-xl-3">
                             <div className="icon">

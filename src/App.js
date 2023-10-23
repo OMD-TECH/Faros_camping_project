@@ -7,6 +7,7 @@ import About from "./components/About";
 import Donate from "./components/Donate";
 import Register from "./components/Register";
 import Login from "./components/Login";
+import { FaArrowCircleUp } from "react-icons/fa";
 
 
 function App() {
@@ -32,6 +33,11 @@ function App() {
               <Register />
             </Route>
           </Switch>
+        </div>
+        <div className="scroll-up">
+          <a href="#">
+            <FaArrowCircleUp className="i"/>
+          </a>
         </div>
         <Footer/>
       </Router>

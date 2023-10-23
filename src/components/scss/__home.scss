@@ -1,7 +1,8 @@
 .home{
+    position: relative;
     .homecont{
-        position: relative;
         .imagebanner{
+           // position: relative;
             .carousel{
                 font-size: 1.2rem;
                 .carousel-item{
@@ -9,7 +10,6 @@
                     .img{
                         height: 100%;
                         width: 100%;
-                        mask-image: linear-gradient(to bottom, white, rgb(255, 255, 255,0));
                         img{
                             width: 100%;
                             height: 100%;
@@ -318,10 +318,10 @@
                     .card-body{
                         position: absolute;
                         bottom: 0;
-                        background-color: rgb(39, 0, 93);
+                        background-color: rgb(255, 255, 255,.8);
                         width: 100%;
                         a{
-                            color: white;
+                            color: black;
                             text-decoration: none;
                         }
                     }
@@ -348,16 +348,13 @@
 
 @media (max-width:700px){
     .home{
-        //padding: .6rem;
         .imagebanner{
-            //text-align: center;
             padding: initial ;
             h2{
                 text-align: left !important;
             }
             .textbody{
                 padding: .4rem!important;
-                //font-size: 1rem;
                 .text{
                     width: 100% !important;
                     h2{
@@ -409,23 +406,18 @@
                     .location{
                         width: 100% !important;
                     }
-                    // .learnmore{
-                    //     //margin-left: 14rem !important;
-                    // }
+                    a{
+                        text-decoration: none;
+                    }
                 }
             }
         }
         .sec2{
-            //margin-top: 10rem !important;
             .right{
                 height: 100% !important;
-                .register{
-                    //margin-left: 15rem !important;
-                }
             }
         }
         .sec5{
-            //margin-top: 30rem !important;
             .left{
                 width: 100% !important;
                 height: 300px;
@@ -512,6 +504,11 @@
                     }
                     .img{
                         height: 60% !important;
+                    }
+                }
+                .left{
+                    .learnmore{
+                        margin-left: 26% !important;
                     }
                 }
             }

@@ -59,7 +59,7 @@
         }
         .sec2{
             .account{
-                width: 400px ;
+                width: 70% ;
             }
         }
     }
@@ -69,8 +69,12 @@
 @media (max-width:600px) {
     .donate{
         .sec2{
+            padding: 1rem;
             .account{
                 width: 100%;
+                .acc{
+                   // display: grid;
+                }
             }
         }
     }
