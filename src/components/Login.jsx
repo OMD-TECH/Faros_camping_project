@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Partner from './Partner'
-import { FaGoogle } from 'react-icons/fa'
 
 export default function Login() {
   return (

@@ -1,6 +1,6 @@
-import { useState } from "react"
-import {Link} from  "react-router-dom"
-import { FaArrowLeft, FaBars, FaHandshake, FaHome, FaPhone, FaRegistered, FaUser } from "react-icons/fa"
+import { useState } from "react";
+import {Link} from  "react-router-dom";
+import { FaArrowLeft, FaBars, FaHandshake, FaHome, FaPhone, FaRegistered, FaUser } from "react-icons/fa";
 
 function Header () {
     
@@ -42,12 +42,12 @@ function Header () {
                                 <span><span>GIVE</span> | <span>PARTNER</span></span>
                             </li>
                         </a>
-                        <a href="/login" className="part">
+                        <Link to='/login' className="part" >
                             <li className="part">
                                 <FaHandshake className="icon"/>
                                 <span>Login</span>
                             </li>
-                        </a>
+                        </Link>
                     </ul>
                     <button className="existmenu" onClick={toggleMenu}>
                         <div className="overlay">

@@ -800,6 +800,7 @@
 .register form .cont input {
   border-radius: 5px;
   padding: 0rem 0.4rem;
+  width: 100%;
 }
 .register form .cont input::-moz-placeholder {
   border: 0;
